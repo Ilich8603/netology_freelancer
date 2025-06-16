@@ -7,7 +7,7 @@ public class VacationPlaningService {
         for (int month = 0; month < 12; month++) {
             if (deposit >= threshold) { // можем ли отдыхать?
                 monthCounter++; // увеличиваем счётчик месяцев отдыха
-                deposit = (deposit - expenses)/3;
+                deposit = (deposit - expenses) / 3;
             } else {
                 deposit = deposit + income - expenses;
             }
